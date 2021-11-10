@@ -1,0 +1,97 @@
+.popup-overlay {
+    /*Hides pop-up when there is no "active" class*/
+    visibility: hidden;
+    position: absolute;
+    background: transparent;
+    width: 800px;
+    height: 450px;
+    z-index: 9999 !important;
+    margin: auto;
+    top: 0; left: 0; bottom: 0; right: 0;
+  }
+  
+  .popup-overlay.active {
+    /*displays pop-up when "active" class is present*/
+    visibility: visible;
+    text-align: center;
+  }
+  
+  .popup-content {
+    /*Hides pop-up content when there is no "active" class */
+    visibility: hidden;
+    position: absolute;
+    z-index: 999;
+    background-color: transparent;
+    width: 100%;
+    height: auto;
+  }
+  
+  .popup-content.active {
+    /*Shows pop-up content when "active" class is present */
+    visibility: visible;
+  }
+
+/* button styling */
+  .join-our-crew {
+    /* display: none; */
+    display: inline-block;
+    margin-top: 50px;
+    padding: 00px 35px 0px 40px;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-transition: all 300ms ease;
+    transition: all 300ms ease;
+    color: #fff !important;
+    font-size: 39px;
+    font-weight: 700;
+    text-decoration: none;
+    position: relative;
+    text-align: center;
+    background-color: transparent !important;
+    border: 5px solid white;
+}
+
+  .join-our-crew:hover {
+      cursor: pointer;
+}
+
+  .join-our-crew:after {
+      content: "\f144";
+      font-family: "Font Awesome 5 Free";
+      padding-left: 20px;
+}
+
+.join-our-crew-flex {
+    display: flex;
+    padding-bottom: 20px;
+}
+
+.join-our-crew-flex button {
+    margin-left: 20px;
+}
+
+.join-us-video-close {
+    background-color: transparent !important;
+    border: 5px solid white;
+    color: #fff;
+    padding: 20px 60px;
+    font-size: 30px;
+}
+
+@media only screen and (max-width: 1440px) {
+.join-our-crew-flex {
+    display: block;
+}
+.join-our-crew-flex button {
+    margin-left: unset !important;
+}
+.join-our-crew {
+    font-size: 31px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.popup-overlay {
+    width: unset !important;
+}
+}
